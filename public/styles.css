@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    /* font-weight: bold; */
+    background-color: #000;
+    color: #ddd;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #777;
+}
+
+.calendar-container {
+    border: 1px solid #555;
+    max-width: 450px;
+    min-height: 800px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-days-container {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    padding: 0.5rem;
+    row-gap: 0.1rem;
+    column-gap: 0.1rem;
+}
+
+.calendar-days {
+    padding: 1rem;
+    border: 1px solid #222;
+    text-align: center;
+    grid-column: span 2;
+    cursor: pointer;
+}
+
+.passive {
+    color: #666;
+}
+
+.current {
+    background-color: #005e7a;
+}
+
+.current:hover {
+    background-color: #037799 !important;
+}
+
+.selected {
+    box-shadow: inset 0 0 10px #f2f2f2;
+}
+
+.calendar-days:hover {
+    background-color: #222;
+    border: 1px solid #555;
+}
+
+.calendar-day-names {
+    padding: 1rem 0;
+    border: 1px solid #222;
+    text-align: center;
+    grid-column: span 2;
+    color: #e0680b;
+    cursor: default;
+}
+
+.header-container {
+    padding: 0.5rem;
+    border: 1px solid #222;
+    margin: 0.5rem;
+    cursor: default;
+    font-size: xx-large;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: larger;
+}
+
+.arrow:hover {
+    color: #aaa;
+}
+
+.calendar-notes-container {
+    padding: 0.5rem;
+    border: 1px solid #222;
+    margin: 1rem 0.5rem;
+    cursor: default;
+    flex: 1;
+}
+
+#cn-form {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: space-between;
+}
+
+#cn-input {
+    border: 1px solid #222;
+    padding: 0.5rem;
+    background-color: #333;
+}
+
+#cn-input:focus {
+    outline: none;
+    background-color: #444;
+}
+
+.cn-notes-main {
+    padding: 0 0.5rem;
+    overflow-y: auto;
+    height: 25rem;
+}
+
+.cn-notes-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cn-notes-li {
+    padding: 0.5rem;
+    border: 1px solid #555;
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cn-notes-li:hover {
+    background-color: #111;
+}
+
+.cn-notes-li:hover span {
+    background-color: #111;
+}
+
+.cn-notes-li span {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 1rem;
+}
+
+.cn-notes-li button {
+    background-color: #333;
+    padding: 0.1rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cn-notes-li button:hover {
+    background-color: #444;
+}

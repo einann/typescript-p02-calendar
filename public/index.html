@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Typescript Calendar</title>
+</head>
+<body>
+    
+    <h3>Typescript Calendar</h3>
+
+    <div class="calendar-container">
+        <div class="header-container">
+            <div id="prev" class="arrow">&#8630;</div>
+            <div class="header-month-and-year">
+            </div>
+            <div id="next" class="arrow">&#8631;</div>
+        </div>
+        <div class="calendar-days-container">
+        </div>
+        <div class="calendar-notes-container">
+            <form id="cn-form">
+                <label for="cn-input">Add Note:</label>
+                <input type="text" id="cn-input" />
+            </form>
+            <div class="cn-notes-main">
+                <h4>Notes</h4>
+                <div class="cn-notes">
+                    <ul class="cn-notes-ul">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
